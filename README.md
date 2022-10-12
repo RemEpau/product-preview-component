@@ -38,6 +38,7 @@ Users should be able to:
 ### Built with
 
 - Media Queries
+- Pseudo Classes
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
@@ -52,7 +53,7 @@ _I'll need to dig further into transitions_
 
 I also had issues with the `<img>` tag in this project since I had to switch between the mobile image and the desktop image.
 
-I've used a `<div` instead with a `background-image` which allows me, with the media queries to switch urls!
+I've used a `<div>` instead with a `background-image` which allows me, with the media queries to switch urls!
 
 But I've also noticed that the image takes a bit to load after switching between the mobile and desktop view, only happen once, but I'd love to know a way to avoid that.
 
