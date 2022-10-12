@@ -14,9 +14,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -48,49 +45,60 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I've learned to use Flexbox and discovered that I need to reuse a `display: flex` if if I want to change the direction of them again.
+And I've also learned how to use media queries and even transitions and learned about pseudo-classes such as `:hover` and `:focus`!
 
-To see how you can add code snippets, see below:
+_I'll need to dig further into transitions_
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I also had issues with the `<img>` tag in this project since I had to switch between the mobile image and the desktop image.
+
+I've used a `<div` instead with a `background-image` which allows me, with the media queries to switch urls!
+
+But I've also noticed that the image takes a bit to load after switching between the mobile and desktop view, only happen once, but I'd love to know a way to avoid that.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+a:hover,
+a:focus {
+  background-color: hsl(156, 42%, 18%);
+  outline: none;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+```html
+<div class="image"></div>
+```
+
+```css
+.image {
+  background-image: url("./assets/image-product-mobile.jpg");
+  [...]
+}
+
+@media (min-width: 50rem) {
+  .card {
+    width: 40rem;
+    flex-direction: row;
+  }
+
+  .image {
+    background-image: url("./assets/image-product-desktop.jpg");
+    height: 100%;
+    width: 200%;
+    border-radius: 1rem 0 0 1rem;
+  }
+}
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to focus on pseudo classes and such, apparently there's a lot of use cases that can now be resolved using pseudo classes.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+So i'll definitely have a deeper look at that.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Web Docs Mozilla | Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) Mozilla always to the rescue with documentation.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@RemEpau](https://www.frontendmentor.io/profile/RemEpau)
