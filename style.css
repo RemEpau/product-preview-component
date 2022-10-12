@@ -65,6 +65,7 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+  pointer-events: none;
 }
 
 /* Inherit fonts for inputs and buttons */
