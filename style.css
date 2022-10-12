@@ -121,6 +121,7 @@ main {
   width: 22rem;
   background-color: var(--clr-neutral-white);
   border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .card-description {
