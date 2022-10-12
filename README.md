@@ -38,6 +38,7 @@ Users should be able to:
 ### Built with
 
 - Media Queries
+- Pseudo Classes
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
